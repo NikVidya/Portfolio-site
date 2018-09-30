@@ -1,0 +1,393 @@
+/*
+	--~~== Header ==~~--
+*/
+header {
+	padding: 10px;
+	text-align: left;
+	position: relative;
+	background-color: #222;
+	margin-bottom: 40px;
+	/* background-image: url("../img/darkbg.jpg"); */
+}
+
+header h1 {
+	display: block;
+	position: relative;
+	text-align:center;
+	margin: 0;
+	padding: 0.5rem;
+	font-size: 2.0em;
+	color: #fff;
+}
+
+header h1 a,
+header h1 a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+header h1 a:hover {
+	color: #bbb;
+}
+
+header nav {
+	text-align:center;
+	display: block;
+	position: relative;
+	background-color: rgba(0,0,0,0.2);
+	margin: -10px;
+	margin-bottom: 2px;
+	padding: 0;
+}
+header nav::after {
+	display: block;
+	clear: both;
+}
+
+header nav a {
+	display: inline-block;
+	padding: 8px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+	color: #bbb;
+	transition: background-color 300ms ease;
+}
+header nav a:hover {
+	background-color: rgba(0,0,0,0.2);
+	color: #bbb;
+}
+header nav a:visited,
+header nav a:active {
+	color: #bbb;
+}
+.current-page {
+	text-decoration:underline;
+	text-decoration-color:#61a1a1;
+	color:#fff;
+}
+.current-page:hover {
+	background-color: rgba(0,0,0,0.2);
+	color: #fff;
+}
+.current-page:visited,
+.current-page:active {
+	color: #fff;
+}
+
+/*
+	--~~== End Header ==~~--
+*/
+
+/*
+	--~~== Footer ==~~--
+*/
+footer {
+	padding: 10px;
+	text-align: left;
+	position: relative;
+	background-color: #222;
+	margin-top: 5px;
+	/* background-image: url("../img/darkbg.jpg"); */
+}
+
+footer nav {
+	text-align:center;
+	display: block;
+	position: relative;
+	background-color: rgba(0,0,0,0.2);
+	margin-top: 2px;
+	padding: 0;
+}
+footer nav::after {
+	display: block;
+	clear: both;
+}
+
+footer nav a {
+	display: inline-block;
+	padding: 8px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+	color: #FFF;
+	transition: background-color 300ms ease;
+}
+footer nav a:hover {
+	background-color: rgba(0,0,0,0.2);
+	color: #FFF;
+}
+footer nav a:visited,
+footer nav a:active {
+	color: #FFF;
+}
+/*
+	--~~== End Footer ==~~--
+*/
+
+.content {
+	min-height: calc(100vh - 2em);
+	margin-left:5%;
+	margin-right:5%;
+	padding:1rem;
+	text-align: center;
+	/* background:rgba(0,0,0, 0.3); */
+}
+.content-row {
+	text-align:left;
+	float:top;
+}
+body {
+	background:#ddd;
+	background-image: url("../img/lightbg.jpg");
+	background-attachment:fixed;
+}
+/*
+	--~~== Sample Section ==~~--
+*/
+.sample-section {
+	text-align:left;
+	margin-bottom:3rem;
+	margin-right:2.4%;
+	margin-left:2.4%;
+	padding:1.5rem;
+	background-color:rgba(255, 255, 255, 0.7);
+	display:inline-block;
+	width:45%;
+	vertical-align:top;
+}
+.sample-section-full{
+	text-align:left;
+	margin-bottom:3rem;
+	margin-left:5%;
+	margin-right:5%;
+	padding:1.5rem;
+	background-color:rgba(255, 255, 255, 0.7);
+	display:inline-block;
+	width:90%;
+	vertical-align:top;
+}
+.sample-section-full-header{
+	text-align:left;
+	margin-bottom:3rem;
+	margin-left:5%;
+	margin-right:5%;
+	padding:1.5rem;
+	background-color:rgba(255, 255, 255, 0.7);
+	display:inline-block;
+	width:90%;
+	vertical-align:top;
+	text-align:center;
+	background-color: #222;
+	color:#fff;
+}
+@media (max-width: 900px) {
+	.sample-section{
+		width:90%;
+		margin-left:1rem;
+		margin-right:1rem;
+	}
+	.card {
+		width:90%;
+		margin-left:1rem;
+		margin-right:1rem;
+	}
+}
+.sample {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+/*
+	--~~== End Sample Section ==~~--
+*/
+/*
+	--~~== Card ==~~--
+*/
+.card {
+	width: 45%;
+	border-radius: 5px;
+	margin-bottom: 3rem;
+	margin-right:2rem;
+	background-color:#222;
+	padding: 20px;
+	display:inline-block;
+	text-align:left;
+}
+
+.card .action {
+	text-align: right;
+	padding: 10px;
+	margin: 5px;
+}
+.card h3 {
+	margin-bottom: 15px;
+
+}
+
+/*
+	--~~== End Card ==~~--
+*/
+
+/*
+	--~~== Text Section ==~~--
+*/
+	.text {
+		width: 80%;
+		margin: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+		color: #FFF;
+		position: relative;
+		background-color: rgba(0,0,0,0.3);
+		box-shadow: 0 0 3px 4px rgba(0,0,0,0.3);
+	}
+
+	.text a {
+		color: #FFF;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.text a:visited {
+		color: #FFF;
+	}
+	.text a:focus,
+	.text a:hover {
+		color: #DDD;
+	}
+	.text a:active {
+		color: #FFF;
+	}
+	 .lead {
+		color: #222;
+	}
+/*
+	--~~== End Text Section ==~~--
+*/
+
+/*
+	--~~== Table of Contents ==~~--
+*/
+
+	nav.toc .section-header {
+		font-weight: bold;
+		font-size: 1.2em;
+		color: #eee;
+	}
+	nav.toc > section {
+		margin-top:8px;
+		margin-right: 5px;
+	}
+	nav.toc a {
+		padding: 3px;
+	color: #fff;
+		text-decoration: none;
+		display: block;
+	}
+	nav.toc a.tab{
+		padding-left:2em;
+		font-size:0.9em;
+	}
+	nav.toc a::before {
+		content: "-- ";
+	}
+	nav.toc a:focus,
+	nav.toc a:hover{
+		color: #999;
+	}
+
+/*
+	--~~== End Table of Contents ==~~--
+*/
+
+
+/*
+	--~~== Interactive Elements ==~~--
+*/
+	.btn {
+		/*border: solid 1px #177832;*/
+		border-radius: 5px;
+		padding: 10px;
+		margin:3px;
+		/*color: #177832;*/
+		color: #FFF;
+		background: #61a1a1;
+		text-decoration: none;
+		transition: background-color 200ms, color 200ms;
+		cursor: pointer;
+		font-family: "Roboto-Condensed", sans-serif;
+	}
+
+
+	.btn:hover {
+		/*background-color: #177832;*/
+		background-color: #c31e1d;
+		color: #FFF;
+	}
+	.btn:active {
+		background-color: #6E1111;
+	}
+
+	.btn.nav {
+		text-decoration: none;
+	}
+	.btn.nav:visited {
+		/*color: #177832;*/
+		color: #FFF;
+	}
+
+	.btn.nav:visited:hover {
+		color: #FFF;
+	}
+
+	.btn.reset {
+		color: #bbbbbb;
+	}
+
+	.btn.reset:active {
+		background-color: #3d3d3d;
+		color: #FFF;
+	}
+
+/*
+	--~~== End Interactive Elements ==~~--
+*/
+/* misc images */
+.img-large {
+	width:100%;
+}
+/* 
+	--~~== Footer =~~--
+	footer {
+		position: relative;
+		display: block;
+		background-color: rgba(3,50,79,0.72);
+		height: 2em;
+		padding: 5px;
+		text-align: center;
+	}
+	footer nav a {
+		display: inline-block;
+	}
+	
+	footer nav a{
+		color: #FFF;
+		text-decoration: none;
+		padding: 3px;
+		padding-left: 12px;
+		padding-right: 12px;
+		cursor: pointer;
+	}
+	footer nav a:visited {
+		color: #FFF;
+	}
+	footer nav a:focus,
+	footer nav a:hover {
+		color: #999;
+	}
+	footer nav a:active {
+		color: #999;
+	}
+/*
+	--~~== End Footer ==~~--
+ */
