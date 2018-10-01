@@ -6,7 +6,7 @@ body {
     font-family: "Roboto-Condensed", sans-serif;
 	font-weight: normal;
 	font-style: normal;	
-    font-size: 1.2em;
+    font-size: 1.1em;
     color:#222;
 }
 
@@ -30,7 +30,7 @@ p {
 h1,
 h2,
 h3 {
-    font-family: "Roboto-Light", sans-serif;
+    font-family: "dejavu";
 }
 
 h1 {
@@ -74,6 +74,9 @@ a:hover {
 a:active {
     color: #560712;
 }
-i {
+/* i {
     color:#fff;
 }
+.dark {
+    color:#222;
+} */

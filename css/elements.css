@@ -126,11 +126,9 @@ footer nav a:active {
 
 .content {
 	min-height: calc(100vh - 2em);
-	margin-left:5%;
-	margin-right:5%;
-	padding:1rem;
+	padding:2rem;
 	text-align: center;
-	/* background:rgba(0,0,0, 0.3); */
+	background:rgba(0,0,0, 0.3);
 }
 .content-row {
 	text-align:left;
@@ -138,8 +136,10 @@ footer nav a:active {
 }
 body {
 	background:#ddd;
-	background-image: url("../img/lightbg.jpg");
+	background-image: url("../img/lightbg2.jpg");
 	background-attachment:fixed;
+	margin-left:10%;
+	margin-right:10%;
 }
 /*
 	--~~== Sample Section ==~~--
@@ -147,13 +147,20 @@ body {
 .sample-section {
 	text-align:left;
 	margin-bottom:3rem;
-	margin-right:2.4%;
-	margin-left:2.4%;
-	padding:1.5rem;
+	margin-right:4.3%;
+	margin-left:4.3%;
+	padding:1.7rem;
 	background-color:rgba(255, 255, 255, 0.7);
 	display:inline-block;
-	width:45%;
+	width:41%;
 	vertical-align:top;
+	border-radius:5px;
+}
+.sample-section .fas.fa-angle-down {
+	font-size: 1.7em;
+}
+.sample-section .fas.fa-angle-up {
+	font-size: 1.7em;
 }
 .sample-section-full{
 	text-align:left;

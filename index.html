@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Nick Mason</title>
+		<title>Nicholas Mason</title>
 
 		<meta charset="utf-8">
 		<meta name=viewport content="width=device-width, initial-scale=1">
@@ -20,6 +20,19 @@
 		<!-- font awesome -->
 		<link href="fonts/fontawesome-free-5.3.1-web/css/all.css" rel="stylesheet">
 		<!-- /Style Sheets -->
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".sample-section").find(".fas.fa-angle-up").hide();
+				$(".sample-section").find("p").hide();
+				$(".sample-section").click(function() { 
+					jQuery("p", this).slideToggle(1000);
+					jQuery(".fas.fa-angle-up", this).toggle();
+					jQuery(".fas.fa-angle-down", this).toggle();
+					
+				});
+			});
+		</script>
 	</head>
 
 	<body>
@@ -31,7 +44,7 @@
 						<a href="guide.html"><i class="fas fa-pen-square"></i> Style Guide</a>
 					</div>
 				</nav>
-				<h1><a href="#">Nick Mason</a></h1>
+				<h1><a href="#">Nicholas Mason</a></h1>
 			</header>
 			
 			<div class="content">
@@ -58,9 +71,10 @@
 				<section class="content-row">
 					<section class="sample-section-full-header">
 						<h2 id="example_projects">Projects</h2>
+						<i class="fab fa-java"></i>&nbsp;<i class="fab fa-android"></i>&nbsp;C#&nbsp;<i class="fab fa-php"></i>&nbsp;<i class="fab fa-git"></i>
 					</section>
 					<section class="sample-section">
-						<h3 id="siege_engineer"><a href="https://github.com/NikVidya/Siege-Engineer">Siege Engineer</a></h3>
+						<h3 id="siege_engineer"><a href="https://github.com/NikVidya/Siege-Engineer">Siege Engineer</a>&nbsp;<i class="fas fa-gamepad"></i></h3>
 						<iframe width="100%" height="360" src="https://www.youtube.com/embed/R9zqRfNSZ2E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						<p>
 							In Siege Engineer, the player controls a lone engineer defending against an army attacking his/her castle. It is up to the player
@@ -80,10 +94,11 @@
 							as major game systems had to be designed on paper first. I also would have spent more time building prefabs as our level designer had some difficulty divining our intent
 							for certain objects and actors. That said, the project turned out nicely and the game can be played from start to finish.
 						</p>
+						<i class="fas fa-angle-down"></i><i class="fas fa-angle-up"></i>
 					</section>
 					<section class="sample-section">
-						<h3 id="meme_machine"><a href="https://github.com/NikVidya/Meme-Machine">Meme Machine</a></h3>
-						<img src="img/mememachine.PNG" alt="meme machine image" width="100%" height="auto">
+						<h3 id="meme_machine"><a href="https://github.com/NikVidya/Meme-Machine">Meme Machine</a>&nbsp;<i class="fas fa-code"></i></h3>
+						<img src="img/mememachine.PNG" alt="meme machine image" width="100%" height="360">
 						<p>
 							Meme Machine is a discord bot that pulls youtube videos from /r/youtubehaiku (a subreddit for short videos) and posts them to the assigned discord channel.
 							It simply uses the RedditSharp library in combination with the Discord api to post a simple text message with all the urls of the videos, which Discord
@@ -94,10 +109,11 @@
 							it always running on a home server and posting videos every 6 hours or so. Other ways I'd like to expand on it would be to find other sources of short videos
 							since currently it only pulls from Reddit.
 						</p>
+						<i class="fas fa-angle-down"></i><i class="fas fa-angle-up"></i>
 					</section>
 					<section class="sample-section">
-						<h3 id="solar_wind"><a href="https://github.com/NikVidya/Solar-Wind">Solar Wind</a></h3>
-						<img src="img/solar1.PNG" alt="solar wind image" width="100%" height="auto">
+						<h3 id="solar_wind"><a href="https://github.com/NikVidya/Solar-Wind">Solar Wind</a>&nbsp;<i class="fas fa-gamepad"></i></h3>
+						<img src="img/solar1.PNG" alt="solar wind image" width="100%" height="360">
 						<p>
 							Solar Wind is a story-driven 2D platformer developed in the Unity engine. Inspired by the likes of Super Mario, Castlevania 
 							and Hollow Knight, it has the player making their way through a dying space station, saving (or sacrificing) others in order to make it
@@ -111,10 +127,11 @@
 							This project taught me some valuable lessons in programming and game development. Alongside the skills built in C# and Unity, it taught me how to lay 
 							out base systems smartly so they could be expanded on and wouldn't slow down work in the long run.
 						</p>
+						<i class="fas fa-angle-down"></i><i class="fas fa-angle-up"></i>
 					</section>
 					<section class="sample-section">
-						<h3 id="burnaby_site"><a href="https://github.com/NikVidya/235_Final_Project">Burnaby City Website</a></h3>
-						<img src="img/burnabysite.PNG" alt="burnaby site image" width="100%" height="auto">
+						<h3 id="burnaby_site"><a href="https://github.com/NikVidya/235_Final_Project">Burnaby City Website</a>&nbsp;<i class="fas fa-code"></i></h3>
+						<img src="img/burnabysite.PNG" alt="burnaby site image" width="100%" height="360">
 						<p>
 							This is a project I worked on for University with two other students.
 						</p>
@@ -138,10 +155,11 @@
 							form they are. As the person primarily in charge of the information forms, I had to make sure that the user understood what was needed
 							from the site alone, without needing extra help.
 						</p>
+						<i class="fas fa-angle-down"></i><i class="fas fa-angle-up"></i>
 
 					</section>
 					<section class="sample-section" >
-						<h3 id="youtube_nologin"><a href="https://github.com/NikVidya/YouTubeNoLogin">Youtube Without Login</a></h3>
+						<h3 id="youtube_nologin"><a href="https://github.com/NikVidya/YouTubeNoLogin">Youtube Without Login</a>&nbsp;<i class="fas fa-code"></i></h3>
 
 						<p>
 							The idea behind this project is to make a simple URL parsing program that transforms any valid Youtube video URL into one that 
@@ -152,7 +170,7 @@
 							I wrote it in PHP because I wanted to start building my skills in backend
 							web languages (I only had some experience with PHP from a university class, and that was only the bare basics).
 						</p>
-						<img src="img/yt.PNG" alt="code image" width="80%" height="auto">							
+						<img src="img/yt.PNG" alt="code image" width="100%" height="360">							
 						<p>
 							I started this by thinking about how I would want the program to work if I came here as a user. 
 							I decided that the site should basically eat a youtube URL and spit out a simple plaintext URL in response as quickly as
@@ -164,6 +182,7 @@
 							If i were to expand on this project, I would make it a more comprehensive program that would allow downloading videos, reverse-searching the video via Google,
 							or looking at the tags to find related videos.
 						</p>
+						<i class="fas fa-angle-down"></i><i class="fas fa-angle-up"></i>
 
 					</section>
 				</section>
