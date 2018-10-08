@@ -20,6 +20,10 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'dejavusans';
+    src: url('../fonts/dejavusans/DejaVuSans.ttf');
+}
+@font-face {
     font-family: 'Roboto';
     src: url('../fonts/roboto/Roboto-Regular.ttf');
 }

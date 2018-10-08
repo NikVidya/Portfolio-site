@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nicholas Mason</title>
+
+		<meta charset="utf-8">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+
+		<!-- Style Sheets -->
+		<!-- Reset -->
+		<link href="css/normalize.css" rel="stylesheet">
+		<!-- Fonts -->
+		<link href="css/fonts.css" rel="stylesheet">
+		<!-- Overall -->
+		<link href="css/main.css" rel="stylesheet">
+		<!-- Typography -->
+		<link href="css/typography.css" rel="stylesheet">
+		<!-- Whole Elements -->
+		<link href="css/elements.css" rel="stylesheet">
+		<!-- font awesome -->
+		<link href="fonts/fontawesome-free-5.3.1-web/css/all.css" rel="stylesheet">
+		<!-- /Style Sheets -->
+		<!-- Scripts -->
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				var $arrows = "<i class='fas fa-angle-down'></i><i class='fas fa-angle-up'></i>";
+				$(".half-width-box").append($arrows);
+				$(".half-width-box").find(".fas.fa-angle-up").hide();
+				$(".half-width-box").find("p").hide();
+				$(".half-width-box").click(function() { 
+					jQuery("p", this).slideToggle(700);
+					jQuery(".fas.fa-angle-up", this).toggle();
+					jQuery(".fas.fa-angle-down", this).toggle();
+				});
+				$("footer").attr("position", "absolute");
+			});
+		</script>
+		<!-- /Scripts -->
+	</head>
+
+	<body>
+			<header>
+				<div class="left-header">
+					<h1><a href="#">Nicholas Mason</a></h1>
+				</div><div class="right-header">
+					<nav>
+						<a href="https://github.com/NikVidya"><i class="fab fa-github-square"></i> GitHub</a>
+						<a href="https://www.linkedin.com/in/nicholas-mason-05117816b/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+						<br>
+						<a href="index.html"><i class="fas fa-home"></i> Home</a>
+						<a href="bio.html" class="current-page"><i class="fas fa-user"></i> Bio</a>
+						<a href="guide.html"><i class="fas fa-pen-square"></i> Style Guide</a>
+					</nav>
+				</div>
+			</header>
+			
+			<div class="content">
+				<section class="section-header">
+					<h2 id="example_projects">Bio</h2>
+				</section>
+				<section class="content-row">
+					<section class="text-blurb">
+						<p>
+							My name is Nicholas Mason. I am an undergraduate with a Bachelor's of Science at Simon Fraser University in the Interactive
+							Arts & Technology program. There I learned many things including the Java language among others, Software, web and game programming,
+							Android app development as well as more in-depth studies of algorithms in computer science courses I took.
+						</p>
+						<p>
+							My university learnings in Android development were supplemented with work experience at Real Bean education, whom I worked for as
+							an intern Android developer for a summer. Here I worked alongside differently-skilled developers to build web communications 
+							for the company's app, as well as the basic User Interface	
+						</p>
+						<p>
+							I am an aspiring software developer with a variety of skills in Programming languages, software
+							development, version control, and interface design. My aspirations are to build great software, learn continually, and work
+							alongside great people.
+						</p>
+					</section>
+					
+				</section>
+			</div>
+
+			<footer>
+				<div class="left-footer">
+					<p class="lead">Nicholas Mason</p>
+					<p><a href="mailto:n.mason1@outlook.com">n.mason1@outlook.com</a></p>
+					<p><a href="www.sfu.ca/~nma50/nick mason">www.sfu.ca/~nma50/nick mason</a></p>
+				</div><div class="right-footer">
+					<nav>
+						<a href="https://github.com/nikvidya/portfolio-site"><i class="fab fa-github-square"></i> site source code</a>
+					</nav>
+				</div>
+			</footer>
+	</body>
+</html>
