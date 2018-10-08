@@ -157,7 +157,6 @@ body {
 	min-height:100vh;
 	position:relative;
 	background:#232323;
-	background-image: linear-gradient(to bottom, #131313, #313131);
 	background-attachment:fixed;
 }
 body::after {
@@ -170,20 +169,22 @@ body::after {
 	text-align: center;
 	margin-left:20%;
 	margin-right:20%;
+	border-radius:5px;
+	border-right: 1px solid #080808;
+	overflow:hidden;
 }
 .content-row {
 	text-align:left;
 	float:top;
 }
 /*
-	--~~== half width box ==~~--
+	--~~== Boxes ==~~--
 */
 .half-width-box-container {
 	width: 50%;
-	/* padding: 0.9rem; */
 	display:inline-block;
 }
-.half-width-box {
+.box {
 	text-align:left;
 	padding:1.6rem;
 	background-color: #141414;
@@ -191,30 +192,30 @@ body::after {
 	width:100%;
 	height: 485px;
 	vertical-align:top;
-	/* border-right: solid 1px #151515; */
 	border-top: solid 1px #333;
 	border-bottom: solid 1px #080808;
 }
-.half-width-text-blurb {
+.large-text-blurb {
 	background-color: #141414;
 	width: 100%;
 	display: inline-block;
 	height: 485px;
 	color: #eee;
-	/* border-left: solid 1px #222; */
 	border-top: solid 1px #333;
 	border-bottom: solid 1px #080808;
 	vertical-align:top;
 	padding: 1.6rem;
 	overflow:auto;
 }
-.half-width-small-box {
+.large-text-blurb .top-paragraph {
+	margin-top:26px;
+}
+.small-box {
 	background-color: #141414;
 	width: 100%;
 	display: inline-block;
 	height: 240px;
 	color: #eee;
-	/* border-left: solid 1px #222; */
 	border-top: solid 1px #333;
 	border-bottom: solid 1px #080808;
 	vertical-align:top;
@@ -232,7 +233,6 @@ body::after {
 }
 .section-header{
 	text-align:left;
-	margin-top:15px;
 	padding:1.5rem;
 	background-color:rgba(255, 255, 255, 0.7);
 	display:inline-block;
@@ -263,18 +263,16 @@ body::after {
 	margin-bottom:30px;
 }
 /*
-	--~~== end half width box ==~~--
+	--~~== End Boxes ==~~--
 */
 /*
 	--~~== Card ==~~--
 */
 .card {
-	width: 45%;
-	border-radius: 5px;
-	margin-bottom: 3rem;
-	margin-right:2rem;
-	margin-top: 2rem;
-	background-color:#090909;
+	width: 100%;
+	background-color:#111;
+	border-top: solid 1px #464646;
+	border-bottom: solid 1px #030303;
 	padding: 20px;
 	display:inline-block;
 	text-align:left;
@@ -385,7 +383,6 @@ body::after {
 
 
 	.btn:hover {
-		/*background-color: #177832;*/
 		background-color: #c31e1d;
 		color: #FFF;
 	}
@@ -397,7 +394,6 @@ body::after {
 		text-decoration: none;
 	}
 	.btn.nav:visited {
-		/*color: #177832;*/
 		color: #FFF;
 	}
 
@@ -417,7 +413,7 @@ body::after {
 /*
 	--~~== End Interactive Elements ==~~--
 */
-/* misc images */
+/* misc elements */
 .img-large {
 	width:100%;
 }

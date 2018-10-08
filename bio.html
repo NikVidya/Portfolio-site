@@ -25,10 +25,10 @@
 		<script>
 			$(document).ready(function() {
 				var $arrows = "<i class='fas fa-angle-down'></i><i class='fas fa-angle-up'></i>";
-				$(".half-width-box").append($arrows);
-				$(".half-width-box").find(".fas.fa-angle-up").hide();
-				$(".half-width-box").find("p").hide();
-				$(".half-width-box").click(function() { 
+				$(".box").append($arrows);
+				$(".box").find(".fas.fa-angle-up").hide();
+				$(".box").find("p").hide();
+				$(".box").click(function() { 
 					jQuery("p", this).slideToggle(700);
 					jQuery(".fas.fa-angle-up", this).toggle();
 					jQuery(".fas.fa-angle-down", this).toggle();
@@ -85,10 +85,10 @@
 				<div class="left-footer">
 					<p class="lead">Nicholas Mason</p>
 					<p><a href="mailto:n.mason1@outlook.com">n.mason1@outlook.com</a></p>
-					<p><a href="www.sfu.ca/~nma50/nick mason">www.sfu.ca/~nma50/nick mason</a></p>
+					<p><a href="http://www.sfu.ca/~nma50/Nick%20Mason">www.sfu.ca/~nma50/Nick Mason</a></p>
 				</div><div class="right-footer">
 					<nav>
-						<a href="https://github.com/nikvidya/portfolio-site"><i class="fab fa-github-square"></i> site source code</a>
+						<a href="https://github.com/nikvidya/portfolio-site"><i class="fab fa-github-square"></i> Site source code</a>
 					</nav>
 				</div>
 			</footer>
