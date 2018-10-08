@@ -172,10 +172,26 @@ body::after {
 	border-radius:5px;
 	border-right: 1px solid #080808;
 	overflow:hidden;
+	border-top: solid 1px #333;
 }
 .content-row {
 	text-align:left;
-	float:top;
+	background-color: #141414;
+	border-top: solid 1px #333;
+	border-bottom: solid 1px #080808;
+}
+.content-row p {
+	margin: 1.3rem;
+}
+.content-row h3 {
+	text-align:left;
+	padding:0.6rem;
+	background-color: #080808;
+	display:inline-block;
+	width:100%;
+	vertical-align:top;
+	color:#fff;
+	margin: 0;
 }
 /*
 	--~~== Boxes ==~~--
@@ -186,55 +202,35 @@ body::after {
 }
 .box {
 	text-align:left;
-	padding:1.6rem;
-	background-color: #141414;
 	display:inline-block;
 	width:100%;
-	height: 485px;
 	vertical-align:top;
-	border-top: solid 1px #333;
-	border-bottom: solid 1px #080808;
+}
+.box img {
+	margin-bottom: 20px;
+}
+.box iframe {
+	margin-bottom: 20px;
 }
 .large-text-blurb {
-	background-color: #141414;
 	width: 100%;
 	display: inline-block;
-	height: 485px;
 	color: #eee;
-	border-top: solid 1px #333;
-	border-bottom: solid 1px #080808;
 	vertical-align:top;
-	padding: 1.6rem;
-	overflow:auto;
+	padding: 1rem;
 }
 .large-text-blurb .top-paragraph {
-	margin-top:26px;
-}
-.small-box {
-	background-color: #141414;
-	width: 100%;
-	display: inline-block;
-	height: 240px;
-	color: #eee;
-	border-top: solid 1px #333;
-	border-bottom: solid 1px #080808;
-	vertical-align:top;
-	padding: 1.6rem;
-	overflow:auto;
+	margin-top:1.5rem;
 }
 .text-blurb {
 	text-align:left;
-	padding:1.5rem;
-	background-color: #141414;
-	border-top: solid 1px #464646;
-	border-bottom: solid 1px #030303;
+	width:100%;
 	display:inline-block;
 	vertical-align:top;
 }
 .section-header{
 	text-align:left;
 	padding:1.5rem;
-	background-color:rgba(255, 255, 255, 0.7);
 	display:inline-block;
 	width:100%;
 	vertical-align:top;
@@ -254,8 +250,6 @@ body::after {
 	}
 	.card {
 		width:100%;
-		margin-left:1rem;
-		margin-right:1rem;
 	}
 }
 .sample {
@@ -322,9 +316,6 @@ body::after {
 	}
 	.text a:active {
 		color: #FFF;
-	}
-	 .lead {
-		color: #222;
 	}
 /*
 	--~~== End Text Section ==~~--

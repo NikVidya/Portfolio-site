@@ -12,8 +12,8 @@ body {
 
 p.lead {
     font-family: "arial", sans-serif;
+    font-weight: bold;
     font-size: 1.0em;
-    color: #888;
 }
 
 .muted {
@@ -59,12 +59,7 @@ code {
 
 a {
     color: aqua;
-    /* text-decoration:none; */
 }
-/* a:visited {
-    color: #335555;
-} */
-
 .fas.fa-down {
     font-size: 2rem;
 }
@@ -78,9 +73,3 @@ a:hover {
 a:active {
     color: #560712;
 }
-/* i {
-    color:#fff;
-}
-.dark {
-    color:#222;
-} */
