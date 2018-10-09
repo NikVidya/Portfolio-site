@@ -20,8 +20,11 @@ p.lead {
     font-weight: lighter;
 }
 p {
+	margin: 1.1rem;
     line-height: 1.5em;
-    margin-bottom:0.8em;
+}
+ul, ol, li {
+	margin: 0.7rem;
 }
 h1,
 h2,
