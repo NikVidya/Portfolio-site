@@ -118,7 +118,8 @@ footer {
 	clear: both;
 	overflow:hidden;
 }
-footer p{
+footer p {
+	margin: 0;
 	margin-bottom: 0.3em;
 	padding: 0;
 }
