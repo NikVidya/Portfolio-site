@@ -186,6 +186,7 @@ body::after {
 .content-row h3 {
 	text-align:left;
 	padding:0.6rem;
+	padding-left: 5%;
 	background-color: #080808;
 	display:inline-block;
 	width:100%;
