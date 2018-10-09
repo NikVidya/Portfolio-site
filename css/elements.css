@@ -4,7 +4,7 @@
 header {
 	padding-left:20%;
 	padding-right:20%;
-	padding-top: 15px;
+	padding-top: 10px;
 	padding-bottom: 15px;
 	margin-bottom: 50px;
 	text-align: left;
@@ -12,18 +12,29 @@ header {
 	background-image: url("../img/bannerback.PNG");
 	border-bottom: solid aqua 1px;
 }
-header .right-header {
-	text-align:right;
-	width: 49%;
-	display:inline-block;
-}
 header .left-header {
 	vertical-align:bottom;
 	text-align:left;
 	width: 49%;
 	display:inline-block;
 }
-
+header .right-header {
+	text-align:right;
+	width: 49%;
+	display:inline-block;
+}
+.left-header a {
+	padding-right: 0.9em;
+	padding-top: 0.5em;
+	padding-bottom: 1.0em;
+	margin-right: 10px;
+}
+.right-header a {
+	padding-left: 0.9em;
+	padding-top: 0.9em;
+	padding-bottom: 0.9em;
+	margin-left: 10px;
+}
 header h1 {
 	display: block;
 	position: relative;
@@ -43,7 +54,6 @@ header h1 a:hover {
 }
 
 header nav {
-	text-align:right;
 	display: block;
 	padding: 0;
 }
@@ -54,9 +64,6 @@ header nav::after {
 
 header nav a {
 	display: inline-block;
-	padding: 8px;
-	margin-left: 10px;
-	margin-right: 10px;
 	text-decoration: none;
 	color: #bbb;
 	transition: background-color 300ms ease;
