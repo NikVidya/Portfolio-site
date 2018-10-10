@@ -179,7 +179,6 @@ body::after {
 	margin-right:20%;
 	margin-bottom: 50px;
 	border-radius:5px;
-	border-top: solid 1px #333;
 	border-left: 1px solid #080808;
 	border-right: 1px solid #080808;
 	overflow:hidden;
@@ -230,6 +229,18 @@ body::after {
 	width: 90%;
 	height: 100%;
 }
+@media (min-width: 2000px) {
+	.box img{
+		margin-left: 1.1rem;
+		margin-right: 1.1rem;
+		height:auto;
+		max-height:none;
+	}
+	.box iframe{
+		margin-left: 1.1rem;
+		margin-right: 1.1rem;
+	}
+}
 .video-container {
 	width: 100%;
 	height: 347px;
@@ -243,6 +254,7 @@ body::after {
 	background-color: #000;
 	color:#fff;
 	border-bottom: solid aqua 1px;
+	border-top: solid 1px #333;
 }
 @media (max-width: 1250px) {
 	.half-width-box{
