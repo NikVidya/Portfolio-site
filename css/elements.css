@@ -229,7 +229,7 @@ body::after {
 	width: 90%;
 	height: 100%;
 }
-@media (min-width: 2000px) {
+@media (min-width: 125rem) {
 	.box img{
 		margin-left: 1.1rem;
 		margin-right: 1.1rem;
@@ -373,29 +373,31 @@ body::after {
 	--~~== End Table of Contents ==~~--
 */
 
-
 /*
 	--~~== Interactive Elements ==~~--
 */
 	.btn {
 		border-radius: 3px;
-		padding: 10px;
+		padding: 7px;
 		margin:3px;
 		color: #FFF;
-		background: #2fb8ae;
+		background: #033;
 		text-decoration: none;
 		transition: background-color 200ms, color 200ms;
 		cursor: pointer;
-		font-family: "dejavu";
+		font-family: "dejavusans";
+		border-top:solid 1px aqua;
+		border-left:solid 1px aqua;
+		border-right:solid 1px #077;
+		border-bottom:solid 1px #077;
 	}
 
-
 	.btn:hover {
-		background-color: #c31e1d;
+		background-color: #1e7980;
 		color: #FFF;
 	}
 	.btn:active {
-		background-color: #6E1111;
+		background-color: #244
 	}
 
 	.btn.nav {
@@ -410,27 +412,17 @@ body::after {
 	}
 
 	.btn.reset {
-		color: #bbbbbb;
+		color: #555;
+	}
+	.btn.reset:hover{
+		background-color:#333;
 	}
 
 	.btn.reset:active {
-		background-color: #3d3d3d;
+		background-color: black;
 		color: #FFF;
 	}
 
 /*
 	--~~== End Interactive Elements ==~~--
 */
-/* misc elements */
-.img-large {
-	width:100%;
-}
-.arrow-container {
-	width: 100%;
-	text-align:center;
-	font-size: 1.9em;
-	background-color: #2fb9ae;
-	border-radius:5px;
-	margin-top: 5px;
-	bottom:0;
-}
