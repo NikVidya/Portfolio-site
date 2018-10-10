@@ -220,6 +220,7 @@ body::after {
 	margin-right: 5%;
 	width: 90%;
 	max-height: 360px;
+	border-radius: 5px;
 }
 .box iframe {
 	margin-top: 1.1rem;
@@ -228,6 +229,7 @@ body::after {
 	margin-right: 5%;
 	width: 90%;
 	height: 100%;
+	border-radius: 5px;
 }
 @media (min-width: 125rem) {
 	.box img{
