@@ -183,13 +183,7 @@ body::after {
 	border-right: 1px solid #080808;
 	overflow:hidden;
 }
-.content-row {
-	text-align:left;
-	background-color: #141414;
-	border-top: solid 1px #333;
-	border-bottom: solid 1px #080808;
-}
-.content-row h3 {
+.content h3 {
 	text-align:left;
 	padding:0.6rem;
 	padding-left: 5%;
@@ -199,6 +193,23 @@ body::after {
 	vertical-align:top;
 	color:#fff;
 	margin: 0;
+}
+.content-row {
+	text-align:left;
+	background-color: #141414;
+	border-top: solid 1px #333;
+	border-bottom: solid 1px #080808;
+}
+.content-column {
+	width: 50%;
+	text-align:left;
+	background-color: #141414;
+}
+.content-column .left-column {
+	border-right: solid 1px #080808;
+}
+.content-column .right-column {
+	border-left: solid 1px #333;
 }
 /*
 	--~~== Boxes ==~~--
@@ -221,6 +232,28 @@ body::after {
 	width: 90%;
 	max-height: 360px;
 	border-radius: 5px;
+}
+.small-image-box {
+	height:64px;
+	width:64px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top:1.4rem;
+	margin-bottom:1.4rem;
+	float:left;
+}
+.box .music-paragraph {
+	margin: 0;
+	margin-bottom: 0.3em;
+	padding: 0;
+}
+.box .small-image {
+	width: 64px;
+	height: 64px;
+	overflow: hidden;
+	display:inline-block;
+	border-radius:0;
+	margin: 0;
 }
 .box iframe {
 	margin-top: 1.1rem;
