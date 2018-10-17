@@ -43,7 +43,6 @@ header h1 {
 	font-size: 2.2em;
 	color: #fff;
 }
-
 header h1 a,
 header h1 a:visited {
 	color: #fff;
@@ -52,7 +51,6 @@ header h1 a:visited {
 header h1 a:hover {
 	color: #bbb;
 }
-
 header nav {
 	display: block;
 	padding: 0;
@@ -61,7 +59,6 @@ header nav::after {
 	display: block;
 	clear: both;
 }
-
 header nav a {
 	display: inline-block;
 	text-decoration: none;
@@ -134,7 +131,6 @@ footer .right-footer {
 	width: 49%;
 	display:inline-block;
 }
-
 footer nav {
 	display: block;
 	position: relative;
@@ -146,7 +142,6 @@ footer nav::after {
 	display: block;
 	clear: both;
 }
-
 footer nav a {
 	display: inline-block;
 	padding: 6px;
@@ -161,6 +156,10 @@ footer nav a:hover {
 /*
 	--~~== End Footer ==~~--
 */
+
+/*
+	--~~== Generic Elements ==~~--
+*/
 body {
 	min-height:100vh;
 	position:relative;
@@ -172,7 +171,6 @@ body::after {
 	display:block;
 	height:95px;
 }
-
 .content {
 	text-align: center;
 	margin-left:20%;
@@ -218,6 +216,10 @@ body::after {
 .right-column .box {
 	border-left: solid 1px #333;
 }
+/*
+	--~~== Generic Elements ==~~--
+*/
+
 /*
 	--~~== Boxes ==~~--
 */
@@ -326,6 +328,7 @@ body::after {
 /*
 	--~~== End Boxes ==~~--
 */
+
 /*
 	--~~== Card ==~~--
 */
@@ -338,7 +341,6 @@ body::after {
 	display:inline-block;
 	text-align:left;
 }
-
 .card .action {
 	text-align: right;
 	padding: 10px;
@@ -346,9 +348,7 @@ body::after {
 }
 .card h3 {
 	margin-bottom: 15px;
-
 }
-
 /*
 	--~~== End Card ==~~--
 */
@@ -367,13 +367,11 @@ body::after {
 		background-color: rgba(0,0,0,0.3);
 		box-shadow: 0 0 3px 4px rgba(0,0,0,0.3);
 	}
-
 	.text a {
 		color: #FFF;
 		text-decoration: underline;
 		cursor: pointer;
 	}
-
 	.text a:visited {
 		color: #FFF;
 	}
@@ -391,7 +389,6 @@ body::after {
 /*
 	--~~== Table of Contents ==~~--
 */
-
 	nav.toc .nav-header {
 		font-weight: bold;
 		font-size: 1.2em;
@@ -418,7 +415,6 @@ body::after {
 	nav.toc a:hover{
 		color: #999;
 	}
-
 /*
 	--~~== End Table of Contents ==~~--
 */
@@ -441,7 +437,6 @@ body::after {
 		border-right:solid 1px #077;
 		border-bottom:solid 1px #077;
 	}
-
 	.btn:hover {
 		background-color: #127a81;
 		color: #FFF;
@@ -449,30 +444,25 @@ body::after {
 	.btn:active {
 		background-color: #244
 	}
-
 	.btn.nav {
 		text-decoration: none;
 	}
 	.btn.nav:visited {
 		color: #FFF;
 	}
-
 	.btn.nav:visited:hover {
 		color: #FFF;
 	}
-
 	.btn.reset {
 		color: #555;
 	}
 	.btn.reset:hover{
 		background-color:#333;
 	}
-
 	.btn.reset:active {
 		background-color: black;
 		color: #FFF;
 	}
-
 /*
 	--~~== End Interactive Elements ==~~--
 */
