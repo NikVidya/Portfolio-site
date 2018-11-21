@@ -2,39 +2,37 @@
 	--~~== Header ==~~--
 */
 header {
-	padding-left:20%;
-	padding-right:20%;
-	padding-top: 10px;
-	padding-bottom: 15px;
+	padding: 10px 20% 15px 20%;
+	border-bottom: solid aqua 1px;
 	margin-bottom: 50px;
 	text-align: left;
 	width:100%;
 	background-image: url("../img/bannerback.PNG");
-	border-bottom: solid aqua 1px;
 }
-header .left-header {
+.left-header {
+	width: 50%;
 	vertical-align:bottom;
 	text-align:left;
-	width: 49%;
 	display:inline-block;
 }
-header .right-header {
+.right-header {
+	width: 50%;
 	text-align:right;
-	width: 49%;
 	display:inline-block;
 }
 .left-header a {
-	padding-right: 0.9em;
 	padding-top: 0.5em;
+	padding-right: 0.9em;
 	padding-bottom: 1.0em;
 	margin-right: 10px;
 }
 .right-header a {
-	padding-left: 0.9em;
 	padding-top: 0.9em;
 	padding-bottom: 0.9em;
+	padding-left: 0.9em;
 	margin-left: 10px;
 }
+
 header h1 {
 	display: block;
 	position: relative;
@@ -69,6 +67,7 @@ header nav a:hover {
 	background-color: rgba(0,0,0,0.2);
 	color: #fff;
 }
+/* highlight nav link to current page */
 .current-page {
 	text-decoration:underline;
 	text-decoration-color:aqua;
@@ -82,14 +81,6 @@ header nav a:hover {
 .current-page:active {
 	color: #fff;
 }
-@media (max-width: 1250px) {
-	.right-header {
-		width: 100%;
-	}
-	.left-header {
-		width: 100%;
-	}
-}
 /*
 	--~~== End Header ==~~--
 */
@@ -98,21 +89,21 @@ header nav a:hover {
 	--~~== Footer ==~~--
 */
 footer {
-	padding-left: 20%;
-	padding-right: 20%;
-	text-align: left;
 	width: 100%;
 	height: 85px;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 10px;
+	border-top: solid aqua 1px;
+	margin-top: 15px;
+	right: 0;
 	bottom:0;
 	left: 0;
-	right: 0;
-	margin-top: 15px;
+	text-align: left;
 	position: absolute;
-	padding-top: 10px;
+	clear: both;
 	background-color: #222;
 	background-image: url("../img/bannerback.PNG");
-	border-top: solid aqua 1px;
-	clear: both;
 	overflow:hidden;
 }
 footer p {
@@ -134,8 +125,8 @@ footer .right-footer {
 footer nav {
 	display: block;
 	position: relative;
-	background-color: rgba(0,0,0,0.2);
 	padding: 0;
+	background-color: rgba(0,0,0,0.2);
 	line-height: 0.9em;
 }
 footer nav::after {
@@ -167,37 +158,37 @@ body {
 	background-attachment:fixed;
 }
 body::after {
+	height:95px;
 	content:'';
 	display:block;
-	height:95px;
 }
 .content {
 	text-align: center;
-	margin-left:20%;
+	border-radius:5px;
+	border-right: 1px solid #080808;
+	border-left: 1px solid #080808;
 	margin-right:20%;
 	margin-bottom: 50px;
-	border-radius:5px;
-	border-left: 1px solid #080808;
-	border-right: 1px solid #080808;
+	margin-left:20%;
 	overflow:hidden;
 }
 .content h3 {
-	text-align:left;
+	width:100%;
 	padding:0.6rem;
 	padding-left: 5%;
-	background-color: #080808;
-	display:inline-block;
-	width:100%;
-	vertical-align:top;
-	color:#fff;
 	margin: 0;
+	text-align:left;
+	display:inline-block;
+	vertical-align:top;
+	background-color: #080808;
+	color:#fff;
 }
 /* when horizontally aligned content should stay together */
 .content-row {
 	text-align:left;
-	background-color: #141414;
 	border-top: solid 1px #333;
 	border-bottom: solid 1px #080808;
+	background-color: #141414;
 }
 /* when vertically aligned content should stay together */
 .content-column {
@@ -226,6 +217,7 @@ body::after {
 .half-width-box-container {
 	width: 50%;
 	display:inline-block;
+	vertical-align:top;
 }
 .box {
 	text-align:left;
@@ -234,21 +226,15 @@ body::after {
 	vertical-align:top;
 }
 .box img {
-	margin-top: 1.1rem;
-	margin-bottom: 1.1rem;
-	margin-left: 5%;
-	margin-right: 5%;
 	width: 90%;
 	max-height: 360px;
 	border-radius: 5px;
+	margin: 1.1rem 5% 1.1rem 5%;
 }
 .small-image-box {
 	height:64px;
 	width:64px;
-	margin-left: 15px;
-	margin-right: 15px;
-	margin-top:1.4rem;
-	margin-bottom:1.4rem;
+	margin: 1.4rem 15px 1.4rem 15px;
 	float:left;
 }
 .box .music-paragraph {
@@ -265,24 +251,21 @@ body::after {
 	margin: 0;
 }
 .box iframe {
-	margin-top: 1.1rem;
-	margin-bottom: 1.1rem;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin: 1.1rem 5% 1.1rem 5%;
 	width: 90%;
 	height: 100%;
 	border-radius: 5px;
 }
 @media (min-width: 125rem) {
 	.box img{
-		margin-left: 1.1rem;
 		margin-right: 1.1rem;
+		margin-left: 1.1rem;
 		height:auto;
 		max-height:none;
 	}
 	.box iframe{
-		margin-left: 1.1rem;
 		margin-right: 1.1rem;
+		margin-left: 1.1rem;
 	}
 }
 .video-container {
@@ -290,37 +273,15 @@ body::after {
 	height: 347px;
 }
 .section-header{
+	width:100%;
 	text-align:left;
 	padding:1.5rem;
+	border-bottom: solid aqua 1px;
+	border-top: solid 1px #333;
 	display:inline-block;
-	width:100%;
 	vertical-align:top;
 	background-color: #000;
 	color:#fff;
-	border-bottom: solid aqua 1px;
-	border-top: solid 1px #333;
-}
-@media (max-width: 78rem) {
-	.half-width-box{
-		width:100%;
-	}
-	.half-width-text-blurb{
-		width:100%;
-	}
-	.half-width-box-container {
-		width: 100%;
-	}
-	.card {
-		width:100%;
-	}
-	.content-column {
-		width: 100%;
-		float:none;
-	}
-	.content-column .box {
-		border-left: none;
-		border-right: none;
-	}
 }
 .sample {
 	padding: 1rem;
@@ -334,12 +295,12 @@ body::after {
 */
 .card {
 	width: 100%;
-	background-color:#111;
+	padding: 20px;
 	border-top: solid 1px #464646;
 	border-bottom: solid 1px #030303;
-	padding: 20px;
 	display:inline-block;
 	text-align:left;
+	background-color:#111;
 }
 .card .action {
 	text-align: right;
@@ -359,8 +320,8 @@ body::after {
 	.text {
 		width: 80%;
 		margin: 20px;
-		margin-left: auto;
 		margin-right: auto;
+		margin-left: auto;
 		padding: 10px;
 		color: #FFF;
 		position: relative;
@@ -400,7 +361,7 @@ body::after {
 	}
 	nav.toc a {
 		padding: 3px;
-	color: #fff;
+		color: #fff;
 		text-decoration: none;
 		display: block;
 	}
@@ -425,6 +386,10 @@ body::after {
 	.btn {
 		border-radius: 3px;
 		padding: 7px;
+		border-top:solid 1px aqua;
+		border-right:solid 1px #077;
+		border-bottom:solid 1px #077;
+		border-left:solid 1px aqua;
 		margin:3px;
 		color: #FFF;
 		background: #033;
@@ -432,10 +397,6 @@ body::after {
 		transition: background-color 200ms, color 200ms;
 		cursor: pointer;
 		font-family: "dejavusans";
-		border-top:solid 1px aqua;
-		border-left:solid 1px aqua;
-		border-right:solid 1px #077;
-		border-bottom:solid 1px #077;
 	}
 	.btn:hover {
 		background-color: #127a81;
@@ -465,4 +426,65 @@ body::after {
 	}
 /*
 	--~~== End Interactive Elements ==~~--
+*/
+
+/*
+	--~~== Responsiveness ==~~--
+*/
+@media screen and (orientation: portrait), (max-width: 78rem) {
+	header {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	.right-header {
+		width: 100%;
+		text-align:inherit;
+	}
+	.right-header a {
+		padding-right: 0.9em;
+		padding-left: 0;
+		margin-right: 10px;
+		margin-left: 0;
+	}
+	.left-header {
+		width: 100%;
+	}
+	.left-header a {
+		padding-bottom:0;
+	}
+	.left-header nav {
+		margin-bottom:1rem;
+	}
+	.content{
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.content-column {
+		width: 100%;
+		float:none;
+	}
+	.content-column .box {
+		border-left: none;
+		border-right: none;
+	}
+	.half-width-box{
+		width:100%;
+	}
+	.half-width-text-blurb{
+		width:100%;
+	}
+	.half-width-box-container {
+		width: 100%;
+	}
+	.card {
+		width:100%;
+	}
+	footer {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+}
+
+/*
+	--~~== End Responsiveness ==~~--
 */
