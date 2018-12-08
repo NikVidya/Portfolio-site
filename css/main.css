@@ -3,3 +3,11 @@
 	margin: 0px;
 	padding: 0px;
 }
+::selection {
+	background-color:aqua;
+	color: indigo;
+}
+::-moz-selection {
+	background-color:aqua;
+	color: indigo;
+}
