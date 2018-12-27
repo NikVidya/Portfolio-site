@@ -28,6 +28,10 @@
 	<!-- font awesome -->
 	<link href="fonts/fontawesome-free-5.3.1-web/css/all.css" rel="stylesheet">
 	<!-- /Style Sheets -->
+
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- /Scripts -->
 </head>
 
 <body>
@@ -38,7 +42,7 @@
 				<a href="https://www.linkedin.com/in/nicholas-mason-05117816b/"><i class="fab fa-linkedin"></i> LinkedIn</a>
 				<a href="docs/Mason_Resume.pdf"><i class="fas fa-file-alt"></i> Resume</a>
 			</nav>
-			<h1><a href="index.html">Nicholas Mason >_</a></h1>
+			<h1><a href="index.html">Nicholas Mason ><span id="hovertext">_</span></a></h1>
 		</div><div class="right-header">
 			<nav>
 				<a href="index.html" class="current-page"><i class="fas fa-home"></i> Home</a>
@@ -50,7 +54,7 @@
 	<div class="content">
 		<section class="section-header">
 			<h2 id="example_projects">Projects</h2>
-			<i class="fab fa-java"></i>&nbsp;<i class="fab fa-android"></i>&nbsp;C#&nbsp;<i class="fab fa-php"></i>&nbsp;<i
+			<i class="fab fa-java"></i>&nbsp;<i class="fab fa-android"></i>&nbsp;<i><img src="img/csharp-white.png" width="16px" height="auto"></img></i>&nbsp;<i class="fab fa-php"></i>&nbsp;<i
 			 class="fab fa-git"></i>&nbsp;<i class="fab fa-js"></i>
 		</section>
 
@@ -64,33 +68,27 @@
 				<div class="box">
 					<h3>&nbsp;</h3>
 					<p class="top-paragraph">
-						Hoc Talk is a work-in-progress peer-to-peer video confrencing service that focuses on a simple, dedicated
-						interface,
-						non-intrusive behaviour without requiring sign-ups or giving away personal information, and dynamic formatting
-						for
-						various video confrencing needs.
+						Hoc Talk is a peer-to-peer video confrencing service that focuses on a simple, dedicated
+						interface, non-intrusive behaviour without requiring sign-ups or giving away personal information, and ease-of-use.
 					</p>
 					<p>
-						This is my first time delving into WebRTC communications, Node.js, and Socket.IO. It is written primarily in
-						JavaScript,
-						CSS and HTML. As far as the work that has been completed, this has been an educative experience working in RTC
-						and I am
-						excited to learn more about it through adding features and fixing bugs. I am not as experienced in Javascript as
-						I
-						am in other languages, and it is growing on me as I find out about its features and structure.
+						This is my first time delving into WebRTC communications and Socket.IO. It is written primarily in
+						JavaScript, CSS and HTML. This has been an educative experience working in RTC
+						and I am excited to learn more about it as I add new features. This has also been a good chance to develop skills 
+						in JavaScript and in writing something using both client-server paradigms and peer-to-peer.
 					</p>
 					<p>
-						The goal for the finished app is to have a web service that allows ad hoc video confrencing. The idea is not to
+						The goal for the app is to have a web service that allows ad hoc video confrencing. The idea is not to
 						have lengthy,
-						intrusive sign-up processes and allow video chats with dynamic formatting for convenience and flexibility. Users
+						intrusive sign-up processes and in the future to allow dynamic formatting for convenience and flexibility. Users
 						will be able to use
 						multiple inputs for situations where they want to show their face on webcam and stream their desktop at the same
 						time. Dynamic formatting
 						comes into play through organizing video feeds such that confrences with many people on one camera can be
 						displayed in a large format,
 						and conferences with multiple users each with their own camera can be displayed in a smaller grid format. I am
-						not at the stage where I
-						want to start designing these interactions as the base systems are still being built.
+						at a stage where the app is functional and useful, and further development will be focused on non-intrusive feature
+						implementation.
 					</p>
 					<p>
 						I was inspired by my university experience working in group projects. Often we would need to hold group meetings
@@ -98,8 +96,7 @@
 						deciding which service to use. Skype, Discord and Facebook were the popular choices, but all of them require
 						signing up and/or downloading
 						the application to work. Those of us who avoid using Facebook and other invasive social media platforms were out
-						of luck, and had to
-						capitulate if the group voted to use such services.
+						of luck, and had to capitulate if the group voted to use such services.
 					</p>
 				</div>
 			</div>
@@ -301,6 +298,7 @@
 			</nav>
 		</div>
 	</footer>
+	<script src="js/intro.min.js"></script>
+	<script src="js/typinganimation.min.js"></script>
 </body>
-
 </html>
