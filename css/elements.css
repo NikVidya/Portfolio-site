@@ -155,7 +155,7 @@ footer nav a:hover {
 body {
 	min-height:100vh;
 	position:relative;
-	background: repeating-linear-gradient( #232323, #232323 4px, #1e1e1e 2px, #1e1e1e 7px );
+	background: repeating-linear-gradient( #232323, #232323 5px, #1e1e1e 5px, #1e1e1e 8px );
 	background-attachment:fixed;
 }
 body::after {
@@ -176,7 +176,7 @@ body::after {
 .content h3 {
 	width:100%;
 	padding:0.6rem;
-	padding-left: 5%;
+	padding-left: 1.1rem;
 	margin: 0;
 	text-align:left;
 	display:inline-block;
