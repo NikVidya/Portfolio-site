@@ -93,6 +93,9 @@ footer p {
 	margin-bottom: 0.3em;
 	padding: 0;
 }
+footer p.lead {
+    color: #ccc;
+}
 footer .left-footer {
 	text-align:left;
 	width: 50%;
@@ -134,7 +137,7 @@ footer nav a:hover {
 body {
 	min-height:100vh;
 	position:relative;
-	background: repeating-linear-gradient( #999, #999 5px, #7b7b7b 5px, #7b7b7b 8px );
+	background: repeating-linear-gradient( #8f8f8f, #8f8f8f 5px, #7e7e7e 5px, #7e7e7e 8px );
 	background-attachment:fixed;
 }
 body::after {
@@ -350,7 +353,7 @@ body::after {
 		color: #FFF;
 	}
 	.btn.reset {
-		color: #555;
+		color: #999;
 	}
 	.btn.reset:hover{
 		background-color:#333;
