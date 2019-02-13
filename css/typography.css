@@ -12,7 +12,7 @@ body {
 p.lead {
     font-family: "Roboto-Light", sans-serif;
     font-weight: bold;
-    font-size: 1.0em;
+    font-size: 1.0rem;
 }
 
 .muted {
@@ -22,9 +22,10 @@ p.lead {
 p {
 	margin: 1.1rem;
     line-height: 1.5em;
+    font-size: 0.9rem;
 }
 ul, ol, li {
-	margin: 0.7rem;
+	margin: 1rem;
 }
 
 h1,
@@ -42,7 +43,8 @@ h1 {
 	margin: 0;
 	font-size: 2.3em;
 	color: #fff;
-	white-space: nowrap;
+    white-space: nowrap;
+    padding-top:0.5em;
 }
 h1 a,
 h1 a:visited {
@@ -54,7 +56,7 @@ h1 a:hover {
 }
 
 h2 {
-    font-size: 1.9em;
+    font-size: 2em;
 }
 h3 {
     font-size: 1.6em;
@@ -65,7 +67,7 @@ h3 {
 	text-align:left;
 	display:inline-block;
 	vertical-align:top;
-	background-color: #232323;
+	background-color: #353;
     color:#fff;
 }
 h4 {
@@ -80,7 +82,7 @@ code {
     font-family: 'firacode';
 }
 a {
-    color: #0ee;
+    color: #ff0;
 }
 .fas.fa-down {
     font-size: 2rem;

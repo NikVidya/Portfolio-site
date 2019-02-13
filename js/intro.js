@@ -16,7 +16,7 @@ $(document).ready(function() {
     $("header").delay(300).fadeToggle(100).delay(200).animate({ height: "95px" }, "swing", function() {
         $("header > *").fadeToggle(400);
     });
-    $("footer").delay(300).fadeToggle(100).delay(200).animate({ height: "85px" }, "swing", function() {
+    $("footer").delay(300).fadeToggle(100).delay(200).animate({ height: "100px" }, "swing", function() {
         $("footer > *").fadeToggle(400);
         $(".content").animate({ width: "60%" }, function() {
             $(".content > .section-header").slideToggle(200, function() {
